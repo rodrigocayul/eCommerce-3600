@@ -11,6 +11,9 @@
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"require": {
+		"ext-mcrypt": "*",
+		"ext-OpenSSL": "*",
+		"ext-soap": "*",		
 		"php": ">=5.3.7"
 	},
 	"suggest": {	
