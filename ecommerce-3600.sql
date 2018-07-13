@@ -1,0 +1,12 @@
+CREATE TABLE productos(
+id INT NOT NULL AUTO_INCREMENT, 
+nombre VARCHAR(30) NOT NULL, 
+descripcion TEXT NOT NULL, 
+imagen VARCHAR(120) NOT NULL,  
+categoria VARCHAR(10) NOT NULL, 
+precio_normal INT NOT NULL, 
+precio_internet INT NOT NULL, 
+precio_oferta INT NOT NULL, 
+stock INT NOT NULL, 
+fecha TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+PRIMARY KEY (id));
