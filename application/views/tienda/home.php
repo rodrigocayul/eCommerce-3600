@@ -31,8 +31,33 @@
 			</ul>
 		</div>
 	</nav>
-        
-		<h1>Hola Mundo</h1>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col s12 m12">        
+			<h3>Home</h3>
+		</div>
+	</div>
+	<div class="row">
+	<?php foreach($data AS $key => $row): ?>
+		<div class="col s12 m6">			
+			<div class="card">
+				<div class="card-image">
+					<!--
+					<img src="images/sample-1.jpg">					
+					<span class="card-title">Card Title</span>
+					-->
+					<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>					
+				</div>
+				<div class="card-content">
+					<p><?php echo $row->nombre ?> (<?php echo $row->precio_normal; ?>)</p>
+				</div>
+			</div>			
+		</div>
+	<?php endforeach; ?>	
+	</div>
+</div>
 
     </body>
   </html>
